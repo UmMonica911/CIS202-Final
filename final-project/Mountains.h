@@ -8,15 +8,18 @@ using namespace std;
 class Mountains {
 
     private:
+        // Mountain's Information
         string name;
         string country;
         int ftElevation;
 
     public:
+        // Setters
         void SetName(string name);
         void SetCountry(string country);
         void SetFtElevation(int ftElevation);
 
+        // Getters
         string GetName();
         string GetCountry();
         int GetFtElevation();

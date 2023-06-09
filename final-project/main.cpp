@@ -29,12 +29,16 @@ const int maxNumber = 7;
 
 // return minimum elevation and name of that mountain
 int minElevation (vector <Mountains> mountains) {
+
+    // stores location of needed information
     int index = 0;
     
     int minElevation = mountains.at(0).GetFtElevation();
     string minMountainName = mountains.at(0).GetName();
     
+    // traversing Mountains vector
     for (int i = 0; i < maxNumber; i++) {
+        // if current mountains elevation is shorter than current minimum value, update minElevation and minMountainName
         if (mountains.at(i).GetFtElevation() < minElevation) {
             minElevation = mountains.at(i).GetFtElevation();
             minMountainName = mountains.at(i).GetName();
